@@ -37,7 +37,7 @@ public class Comment implements Serializable{
     @ManyToOne
     private Wedding wedding;
     @Column(name = "created_date")
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date createdDate;
 
     /**
