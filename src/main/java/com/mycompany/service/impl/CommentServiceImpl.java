@@ -12,7 +12,6 @@ import com.mycompany.repository.CommentRepository;
 import com.mycompany.repository.UserRepository;
 import com.mycompany.repository.WeddingRepository;
 import com.mycompany.service.CommentService;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,13 +33,13 @@ public class CommentServiceImpl implements CommentService{
     @Override
     public Comment addComment(String content, int weddingId, User creator) {
         Wedding d = this.weddingRepository.getWeddingById(weddingId);
-        Date date = Calendar.getInstance().getTime();
-  
+        User user = this.userRepository.getUserById(creator.getId());
+        
         Comment c = new Comment();
         c.setContent(content);
         c.setWedding(d);
-        c.setUser(creator);
-        c.setCreatedDate(date);
+        c.setUser(user);
+        c.setCreatedDate(new Date());
         
         return this.commentRepository.addComment(c);
     }

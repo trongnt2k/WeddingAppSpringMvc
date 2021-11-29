@@ -27,14 +27,12 @@ public class ApiCommentController {
     @Autowired
     private CommentService commentService;
     
-    @PostMapping(path = "/api/add-comment", produces = {
-        MediaType.APPLICATION_JSON_VALUE
-    })
+    @PostMapping(path = "/api/add-comment", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Comment> addComment(@RequestBody Map<String, String> params, HttpSession session){
         User u = (User) session.getAttribute("currentUser");
         if (u != null)
             try{
-                String content = params.getOrDefault("content", "");
+                String content = params.get("content");
                 int weddingId = Integer.parseInt(params.get("weddingId"));
 
                 Comment c = this.commentService.addComment(content, weddingId, u);

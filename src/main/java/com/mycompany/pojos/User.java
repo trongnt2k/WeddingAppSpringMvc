@@ -46,6 +46,7 @@ public class User implements Serializable{
     @Column(name = "user_role")
     private String userRole;
     @OneToMany(mappedBy = "user")
+    @JsonIgnore
     private Set<Wedding> wedding;
     @JsonIgnore
     @Transient

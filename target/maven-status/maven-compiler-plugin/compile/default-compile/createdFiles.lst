@@ -20,6 +20,7 @@ com\mycompany\configs\WebApplicationContextConfig.class
 com\mycompany\controllers\WeddingController.class
 com\mycompany\configs\HibernateConfig.class
 com\mycompany\configs\SpringSecurityConfig.class
+com\mycompany\configs\handlers\LogoutHandler.class
 com\mycompany\repository\WeddingHallRepository.class
 com\mycompany\repository\ServiceRepository.class
 com\mycompany\repository\DishesanddrinkRepository.class
@@ -58,4 +59,6 @@ com\mycompany\controllers\CartController.class
 com\mycompany\pojos\Dishesanddrink.class
 com\mycompany\pojos\Dishesanddrink_.class
 com\mycompany\pojos\Comment_.class
+com\mycompany\formatter\DishesanddrinkFormatter.class
+com\mycompany\configs\handlers\LoginSuccessHandler.class
 com\mycompany\service\impl\ServiceServiceImpl.class

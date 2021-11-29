@@ -21,10 +21,12 @@
     </div>
 </div>
 <br></br>
-<form class="form-group">
-    <textarea class="form-control" id="commentId" placeholder="Nhập bình luận..."></textarea>
-    <br>
-    <input type="submit" onclick="addComment(${wedding.id})" value="Bình luận" class="btn btn-danger"/>
+<form>
+    <div class="form-group" style="padding: 10px">
+        <label for="comment">Bình luận:</label>
+        <textarea class="form-control" cols="6" id="commentId" placeholder="Nhập bình luận..."></textarea>
+        <button type="button" onclick="addComment(${wedding.id})" class="btn btn-danger">Bình luận</button>
+    </div> 
 </form>
 
 <div id="commentArea">
@@ -41,12 +43,13 @@
     </div>
 </c:forEach>
     
+</div>   
     <ul class="pagination">
         <c:forEach begin="1" end="${Math.ceil(commentCounter/6)}" var="i" >
             <li class="page-item"><a class="page-link" href="<c:url value="/wedding/${wedding.id}" />?page=${i}">${i}</a></li>
         </c:forEach>
     </ul>
-</div>
+
 
 <script>
     window.onload = function() {
