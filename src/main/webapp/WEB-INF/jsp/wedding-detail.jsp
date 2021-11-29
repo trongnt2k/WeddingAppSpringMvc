@@ -31,18 +31,25 @@
 
 <div id="commentArea">
 
-<c:forEach items="${comments}" var="comment">
-    <div class="row">
-        <div class="col-md-1" style="padding: 10px">
-            <img class="rounded-circle img-fluid" src="<c:url value="/images/default.jpg" />" />
+    <c:forEach items="${comments}" var="comment">
+        <div class="row">
+            <c:if test="${comment.user.avatar != null}">
+                <div class="col-md-1" style="padding: 10px">
+                    <img class="rounded-circle img-fluid" src="${comment.user.avatar}" />
+                </div>
+            </c:if>
+            <c:if test="${comment.user.avatar == null}">
+                <div class="col-md-1" style="padding: 10px">
+                    <img class="rounded-circle img-fluid" src="<c:url value="/images/default.jpg" />" />
+                </div>   
+            </c:if>
+            <div class="col-md-11 my-date">
+                <p>${comment.content}</p>  
+                <i>${comment.createdDate}</i> 
+            </div>
         </div>
-        <div class="col-md-11 my-date">
-            <p>${comment.content}</p>  
-            <i>${comment.createdDate}</i> 
-        </div>
-    </div>
-</c:forEach>
-    
+    </c:forEach>
+        
 </div>   
     <ul class="pagination">
         <c:forEach begin="1" end="${Math.ceil(commentCounter/6)}" var="i" >

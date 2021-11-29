@@ -10,6 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -30,7 +31,7 @@ public class Comment implements Serializable{
     private int id;
     private String content;
     @JoinColumn(name = "user_id", referencedColumnName = "id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private User user;
     @JoinColumn(name = "wedding_id", referencedColumnName = "id")
     @JsonIgnore
