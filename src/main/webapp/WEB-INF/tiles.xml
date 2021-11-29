@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name = "baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="...."/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="content" value="BASE" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="weddinghalladmin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý sảnh cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/weddinghalladmin.jsp" />
+    </definition>
+    <definition name="weddinghall" extends="baseLayout">
+        <put-attribute name="title" value="Sảnh cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/weddinghall.jsp" />
+    </definition>
+    <definition name="weddinghall-detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết sảnh cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/weddinghall-detail.jsp" />
+    </definition>
+    <definition name="serviceadmin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý dịch vụ cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/serviceadmin.jsp" />
+    </definition>
+    <definition name="service" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý dịch vụ cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/service.jsp" />
+    </definition>
+    <definition name="service-detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết dịch vụ cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/service-detail.jsp" />
+    </definition>
+    <definition name="dishesanddrinkadmin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý món ăn"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/dishesanddrinkadmin.jsp" />
+    </definition>
+    <definition name="menu" extends="baseLayout">
+        <put-attribute name="title" value="Thực đơn cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/menu.jsp" />
+    </definition>
+    <definition name="menuadmin" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý thực đơn"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/menuadmin.jsp" />
+    </definition>
+    <definition name="menu-detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết thực đơn cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/menu-detail.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng kí"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="wedding" extends="baseLayout">
+        <put-attribute name="title" value="Tiệc cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding.jsp" />
+    </definition>
+    <definition name="wedding-detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết tiệc cưới"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding-detail.jsp" />
+    </definition>
+    <definition name="wedding-rent" extends="baseLayout">
+        <put-attribute name="title" value="Các dịch vụ sử dụng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding-rent.jsp" />
+    </definition>
+    <definition name="cart" extends="baseLayout">
+        <put-attribute name="title" value="Giỏ hàng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
+    </definition>
+</tiles-definitions>
