@@ -38,8 +38,11 @@ public class Wedding implements Serializable{
     @Column(name = "number_desk")
     private int numberDesk;
     @Column(name = "organize_date")
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date organizeDate;
+    @Column(name = "created_date")
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
+    private Date createdDate;
     private String description;
     @Column(name = "total_price")
     private BigDecimal totalPrice;
@@ -202,5 +205,19 @@ public class Wedding implements Serializable{
      */
     public void setCommentCollection(Collection<Comment> commentCollection) {
         this.commentCollection = commentCollection;
+    }
+
+    /**
+     * @return the createdDate
+     */
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    /**
+     * @param createdDate the createdDate to set
+     */
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 }

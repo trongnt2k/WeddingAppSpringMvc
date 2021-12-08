@@ -33,9 +33,16 @@
 
 <c:forEach items="${comments}" var="comment">
     <div class="row">
-        <div class="col-md-1" style="padding: 10px">
-            <img class="rounded-circle img-fluid" src="<c:url value="/images/default.jpg" />" />
-        </div>
+        <c:if test="${comment.user.avatar != null}">
+            <div class="col-md-1" style="padding: 10px">
+                <img class="rounded-circle img-fluid" src="${comment.user.avatar}" />
+            </div>
+        </c:if>
+        <c:if test="${comment.user.avatar == null}">
+            <div class="col-md-1" style="padding: 10px">
+                <img class="rounded-circle img-fluid" src="<c:url value="/images/default.jpg" />" />
+            </div>   
+        </c:if>
         <div class="col-md-11 my-date">
             <p>${comment.content}</p>  
             <i>${comment.createdDate}</i> 

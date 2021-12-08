@@ -13,10 +13,11 @@ import javax.persistence.metamodel.SetAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.7.7.v20200504-rNA", date="2021-11-29T18:18:15")
+@Generated(value="EclipseLink-2.7.7.v20200504-rNA", date="2021-12-08T09:43:39")
 @StaticMetamodel(Wedding.class)
 public class Wedding_ { 
 
+    public static volatile SingularAttribute<Wedding, Date> createdDate;
     public static volatile SingularAttribute<Wedding, WeddingHall> weddinghall;
     public static volatile SingularAttribute<Wedding, BigDecimal> totalPrice;
     public static volatile SingularAttribute<Wedding, Date> organizeDate;

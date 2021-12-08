@@ -84,4 +84,26 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="title" value="Giỏ hàng"/>
         <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
     </definition>
+    <definition name = "baseAdminLayout" template="/WEB-INF/layout/base-admin.jsp">
+        <put-attribute name="title" value="Quản trị hệ thống đặt tiệc"/>
+        <put-attribute name="left" value="/WEB-INF/layout/admin-left.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/admin-footer.jsp"/>
+        <put-attribute name="content" value="..." />
+    </definition>
+    <definition name="wedding-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê mật độ tiệc cưới theo tháng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding-stats.jsp" />
+    </definition>
+    <definition name="wedding-year-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê mật độ tiệc cưới theo năm"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding-year-stats.jsp" />
+    </definition>
+    <definition name="wedding-revenue-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo tháng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding-revenue-stats.jsp" />
+    </definition>
+    <definition name="wedding-revenue-year-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo năm"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/wedding-revenue-year-stats.jsp" />
+    </definition>
 </tiles-definitions>

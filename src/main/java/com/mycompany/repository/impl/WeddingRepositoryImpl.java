@@ -72,7 +72,7 @@ public class WeddingRepositoryImpl implements WeddingRepository{
         if(startDate == "" && endDate != ""){
             try {
                 Date endate = new SimpleDateFormat("yyyy-MM-dd").parse(endDate);
-                Predicate p2 = builder.greaterThanOrEqualTo(root.get("organizeDate"), endate);
+                Predicate p2 = builder.lessThanOrEqualTo(root.get("organizeDate"), endate);
                 query = query.where(p2);
             } catch (ParseException ex) {
                 Logger.getLogger(WeddingRepositoryImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -128,6 +128,7 @@ public class WeddingRepositoryImpl implements WeddingRepository{
             w.setOrganizeDate(organizeDate);
             w.setDescription(description);
             w.setTotalPrice(totalPrice);
+            w.setCreatedDate(new Date());
             
             s.save(w);
             

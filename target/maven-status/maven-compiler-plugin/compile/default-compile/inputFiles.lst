@@ -24,7 +24,9 @@ C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycomp
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\repository\impl\DishesanddrinkRepositoryImpl.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\WeddingHallService.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\pojos\WeddingHall.java
+C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\StatsService.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\repository\CommentRepository.java
+C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\repository\StatsRepository.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\impl\WeddingServiceImpl.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\MenuService.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\impl\DishesanddrinkServiceImpl.java
@@ -33,9 +35,12 @@ C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycomp
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\pojos\Service.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\pojos\Wedding.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\pojos\Cart.java
+C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\repository\impl\StatsRepositoryImpl.java
+C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\controllers\AdminController.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\impl\CommentServiceImpl.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\repository\UserRepository.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\WeddingService.java
+C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\impl\StatsServiceImpl.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\configs\SecurityWebappInitializer.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\service\impl\WeddingHallServiceImpl.java
 C:\Users\User\Documents\NetBeansProjects\WeddingProject\src\main\java\com\mycompany\controllers\MenuController.java
